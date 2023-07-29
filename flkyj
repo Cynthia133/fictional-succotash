@@ -1,0 +1,36 @@
+Mirror.prototype.isFunction=function(){
+return this instanceof FunctionMirror;
+};
+Mirror.prototype.isUnresolvedFunction=function(){
+return this instanceof UnresolvedFunctionMirror;
+};
+Mirror.prototype.isArray=function(){
+return this instanceof ArrayMirror;
+};
+Mirror.prototype.isDate=function(){
+return this instanceof DateMirror;
+};
+Mirror.prototype.isRegExp=function(){
+return this instanceof RegExpMirror;
+};
+Mirror.prototype.isError=function(){
+return this instanceof ErrorMirror;
+};
+Mirror.prototype.isPromise=function(){
+return this instanceof PromiseMirror;
+};
+Mirror.prototype.isGenerator=function(){
+return this instanceof GeneratorMirror;
+};
+Mirror.prototype.isProperty=function(){
+return this instanceof PropertyMirror;
+};
+Mirror.prototype.isInternalProperty=function(){
+return this instanceof InternalPropertyMirror;
+};
+Mirror.prototype.isFrame=function(){
+return this instanceof FrameMirror;
+};
+Mirror.prototype.isScript=function(){
+return this instanceof ScriptMirror;
+};
